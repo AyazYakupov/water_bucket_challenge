@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+flake8 = "*"
+pyright = "*"
+
+[packages]
+flask = "*"
+pydantic = "*"
+flasgger = "*"
+flask-limiter = "*"
+six = "1.15.0"
+
+[requires]
+python_version = "3.9"

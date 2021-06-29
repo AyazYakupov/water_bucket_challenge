@@ -1,0 +1,43 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+
+# Translations
+*.mo
+
+# Temp dir
+tmp/*
+
+# Mac
+*.DS_Store
+
+# Linux:
+.*.swp
+
+#special
+_python_source
+.pytest_cache
+.coverage
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System Files
+.DS_Store
+Thumbs.db
