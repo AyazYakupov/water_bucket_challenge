@@ -16,3 +16,11 @@ pipenv install --deploy --dev
 # UI
 
 For the visual presentation of the interface was chosen swagger UI which presented on /apidocs path
+
+# Tests
+
+For running tests use command:
+ 
+```
+PYTHONPATH=src/water_bucket_challenge/ pytest 
+```
