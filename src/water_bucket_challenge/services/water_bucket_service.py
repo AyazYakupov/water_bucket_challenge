@@ -1,6 +1,7 @@
 import typing
-from exceptions import HttpError
 from http import HTTPStatus
+
+from exceptions import HttpError
 
 
 class WaterBucketService:

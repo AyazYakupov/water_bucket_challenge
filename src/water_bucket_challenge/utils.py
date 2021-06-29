@@ -24,7 +24,7 @@ def validate_request(
 
             try:
                 if request_validator:
-                    validated_data = request_validator(**request.get_json())
+                    validated_data = request_validator(**request.get_json())  # type: ignore
 
                 if query_model:
                     validated_query = query_model(**request.args)

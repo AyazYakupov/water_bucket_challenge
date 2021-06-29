@@ -1,9 +1,10 @@
-from config import settings
-from openid import schema
 from flasgger import Swagger
 from flask import Flask
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
+
+from config import settings
+from openid import schema
 
 
 class AppContext:

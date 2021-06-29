@@ -1,5 +1,4 @@
 import os
-from typing import Union
 
 from pydantic import BaseSettings
 
@@ -21,13 +20,12 @@ class SettingPyTest(Settings):
         env_file = ".env.test"
 
 
-class SettingsFactory:
-    def __new__(cls) -> Union[SettingPyTest, Settings]:
-        is_testing_env = os.environ.get("TESTING_ENV", False)
-        if is_testing_env:
-            return SettingPyTest()
+def get_settings():
+    is_testing_env = os.environ.get('TESTING_ENV', False)
+    if is_testing_env:
+        return SettingPyTest()
 
-        return Settings()
+    return Settings()
 
 
-settings = SettingsFactory()
+settings = get_settings()
