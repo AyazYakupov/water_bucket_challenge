@@ -10,6 +10,7 @@ Clone repository and create environment with pipenv:
 
 ```
 python -m pip install --upgrade pipenv wheel
+pip install pipenv 
 pipenv install --deploy --dev
 ```
 
